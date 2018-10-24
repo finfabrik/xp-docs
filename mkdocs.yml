@@ -3,4 +3,5 @@ pages:
     - Welcome: index.md
     - English:
       - 'White Pager': 'en/whitepaper.md'
+      - 'Glossary': 'en/glossary.md'
 theme: readthedocs
