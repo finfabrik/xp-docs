@@ -7,3 +7,7 @@
 > Binary-mode token(s) are tokens that can exist either in private state or public state. 
 Tokens in private state are circulated only on the permissioned Corda distributed ledger and can be transferred _out_ to a public blockchain by a mechanism of 1:1 pegging (e.g.  1 XPU token to 1 XPU ERC token). 
 Tokens transferred out onto public blockchains are said to be in a public state.
+
+## Dapps
+
+> Dapps are Decentralized Applications that exist and run on a blockchain or P2P network of computers rather than a single computer.
