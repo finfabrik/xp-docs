@@ -2,6 +2,9 @@
   "name": "xp-docs",
   "version": "1.0.0",
   "main": "./site/index.html",
+  "scripts": {
+    "local": "mkdocs serve"
+  },
   "devDependencies": {
     "grunt": "^1.0.3",
     "grunt-contrib-jshint": "^2.0.0",
