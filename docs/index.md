@@ -7,4 +7,4 @@
 > CrossPool is an exchange built on fundamental capital markets concepts to serve professional cryptoasset investors and optimally support origination, listing and trading of Digital Asset-Backed Securities, [DABS](en/glossary/#dabs).
 ‍The platform is powered by the dedicated CrossPool Utility token (XPU) that we are bringing into initial circulation via a Private Offering.
 
-[English Whitepaper](en/whitepaper.md)
+[English Whitepaper (version 1.0)](en/whitepaper.md)
