@@ -56,6 +56,8 @@ XPU will be brought into initial circulation via a private offering.
 CrossPool is developed by FinFabrik, a financial technology firm based in Hong Kong. The team shows a strong track record in capital markets, with deep expertise in the area of wealth management, 
 blockchain technology, trading operations and software development.
 
+---
+
 # 1. Market overview 
 
 It has been a decade since the birth of bitcoin, the digital currency that has revolutionised global financial markets. A rapidly growing number of Initial Coin Offerings (ICOs) and 
@@ -351,6 +353,8 @@ integrate with well-established markets is to comply with rules and regulations 
 on systems supporting these developments. From a provider perspective there is great opportunity to shape and propel 
 this development with innovative technology.
    
+---
+   
 # 2. Digital Asset-Backed Securities and their impact 
 
 Overcoming the challenges and unlocking the opportunities discussed in section 1 can be achieved in many ways. 
@@ -467,6 +471,8 @@ and the application could apply to a lot more use cases that are not presented h
 <p  style="text-align:center">
   <img src="../../images/table-2.png" />
 </p>
+       
+---
        
 # 3. The CrossPool Platform 
 
@@ -620,6 +626,8 @@ The business strategy and revenue model evolve with key milestones achieved, and
         Supply: Asset origination services charges, listing fees<br/>
         Demand: Volume-based trading commissions 
 
+---
+
 # 4. Technical approach 
 
 ## 4.1 CrossPool System Overview 
@@ -755,6 +763,8 @@ exchange comparing to the traditional centralised exchange, such as latency of o
 a hybrid exchange will still keep the centralised exchange matching efficiency with the added benefit of faster and frictionless settlement. As the blockchain technology progresses, 
 the CrossPool hybrid exchange could be further upgraded to a fully de-centralised exchange.
   
+---
+  
 # 5. Road Map & Major Features
 
 There are 4 delivery milestones (phases) in year 2019, the first year of operation: Mt. Tai, Mt. Hua, Mt. Heng and Mt. Song. 
@@ -843,6 +853,8 @@ Version Mt. Song & beyond (subject to change).
     - Distributed file sharing and encryption on heterogeneous cloud setup, enabling secure storage of sensitive documents and information; 
     - Allow files on XPFS to be deleted, archived and restored
 
+---
+
 # 6. CrossPool token private offering
 
 ## 6.1 Overview 
@@ -926,6 +938,8 @@ We anticipate to start token allocation in Q1 2019, and we will publish the exac
 
 The use of funds reflects our focus on engineering and research work and will be subject to audit.
 
+---
+
 # 7. Team and structure  
 
 ## 7.1 Corporate governance 
@@ -944,6 +958,8 @@ that drives us to build the platform.
  
 CrossPool is developed by FinFabrik, a technology provider that serves cryptoassets businesses. 
 To see the rest of the FinFabrik team, please refer to our [website](https://www.finfabrik.com/people).
+
+---
 
 # 8. References 
 
