@@ -78,7 +78,7 @@ platform tokens, utility tokens, security tokens and Digital Asset-Backed Securi
 represent the full spectrum of the cryptoasset environment.
 
 Unlike traditional asset classes cryptoassets are subject to network effects created by the
-community around them 1 . The result is a strong force of concentration that we do not see in
+community around them [1]. The result is a strong force of concentration that we do not see in
 other asset classes. Ultimately this drive leads to an oligopoly of a few cryptocurrencies
 dominating the entire market. Bitcoin the oldest asset of this emerging class accounts for
 52% 2 of the total market share (USD 112 Billion).
@@ -147,8 +147,8 @@ the consolidations of some digital currencies and the application of a broader r
 blockchain applications.
 
 We expect to see an increase in the issuance of cryptocurrencies by central banks, as
-Venezuela has already done, including probably some economically and politically relevant
-countries such as Russia or China, which will lead to an intensification of regulatory efforts of
+Venezuela [2] has already done, including probably some economically and politically relevant
+countries such as Russia or China [3], which will lead to an intensification of regulatory efforts of
 digital currencies in other geographies.
 
 The bulk of change will be in the infrastructure to manage transactions. The new versions of
@@ -383,7 +383,7 @@ exchanged for other asset tokens (DABS) within the same or other asset classes.
 </p>
 
 While nomenclature is not settled yet and there are several different terms applied to the same concept, for example 
-Security Token, in this paper, we will use DABS to refer to this new class of instruments within cryptoassets. 
+Security Token [4], in this paper, we will use DABS to refer to this new class of instruments within cryptoassets. 
 
 ## 2.2 Key qualities added to assets via tokenisation 
        
@@ -567,7 +567,7 @@ control to allow files to be shared and accessed securely. This collaboration is
 
 One of the most valued features of a public blockchain protocol is the anonymity it offers its users. The transaction origination and destination are random unique addresses which can’t 
 be specifically traced even though all transactions are recorded and made public. A user can preserve his or her privacy as long as their pseudonym is not linked. Only after the link 
-between the identity and the address is established and disclosed, all details about the address become publicly available, including a full transaction history. 
+between the identity and the address is established and disclosed, all details about the address become publicly available, including a full transaction history [5]. 
 
 This creates two major issues for the adoption of DLT by financial institutions: transactions and their history are hard to trace and audit which in turn creates challenges around efficient 
 compliance with Anti-Money Laundering regulations. On the opposite side, it is difficult for an institution to preserve the transaction privacy of parties without disclosing information to 
@@ -620,16 +620,356 @@ The business strategy and revenue model evolve with key milestones achieved, and
         Supply: Asset origination services charges, listing fees<br/>
         Demand: Volume-based trading commissions 
 
-# Technical approach 
+# 4. Technical approach 
 
-# Development approach 
+## 4.1 CrossPool System Overview 
 
-# CrossPool token private offering 
+CrossPool aims to become an exchange of choice for originating, listing and trading cryptoassets or enterprise tokens with 
+cross-chain interoperability and multi-venue connectivity.
 
-# Team and structure 
+CrossPool uses Distributed Ledger Technology (DLT) to fractionalise assets ownership, automate cashflows through smart contracts, 
+increase security and transparency whilst simplifying what is today a cumbersome and documents intensive process spread across various intermediaries.
 
-# Acknowledgement 
+<p  style="text-align:center">
+  <img src="../../images/xpoverview.png" />
+</p>
 
-# References 
+Integrated with our existing CryptoFabrik cryptoassets trading platform, CrossPool will be a market place where cryptoasset liquidities across different 
+channels are aggregated and matched and trades are settled immediately on a distributed ledger. This setup will help to avoid errors and improve the 
+traditional disjoined lengthy processes of clearing, increase the ease of exchange and unlock asset ownership for more investors. 
+
+On this single platform, CrossPool connects the common and sophisticated users, either directly or through an agency, offering, trading, 
+investing and managing cryptoassets with minimum cost.  
+
+CrossPool will also be connected with other cryptoassets trading venues, be it a centralised exchange, a de-centralised exchange or an 
+Over-The-Counter (OTC) pool, to bring in additional liquidity, so that businesses and users of CrossPool can always trade on the best price of a 
+cryptoasset or trade cryptoassets which are offered by other venues.   
+
+CrossPool will be interoperable with other blockchains, public or permissioned, to achieve truly global cross-border movement and exchange of cryptoassets. 
+
+## 4.2 CrossPool Ledger with Secure Distributed Storage System 
+
+One of the two sub-components composed of CrossPool is the CrossPool Distributed Ledger (XPDL). The XPDL will be built on Corda and extend Cordite’s Distributed General Ledger 
+model with a built-in secure distributed storage system, the CrossPool File System (XPFS). 
+
+What is Corda? Corda 
+>_“is a blockchain and smart contract platform. As a blockchain platform Corda allows parties to transact directly, with value. 
+The key challenges for legacy blockchain technology are a lack of privacy and finality. Corda was designed to address these structural shortcomings creating a 
+platform that enables private transactions with immediate finality”._[6,7]  
+
+And Why we choose Corda? Because some specific aspects of Corda’s design make it an especially attractive target for cryptoasset issuances, as Richard Brown, 
+CTO of R3, stated in his articles about asset tokenisation [8,9]:
+
+- Settlement finality, which enables the real-world issuer to demonstrate compliance with associated finality regulations as well as to 
+reduce their own risk stemming from blockchain “reorganisations” (fork) that can occur on other platforms. 
+- Strong identity layer, which enables firms to know who is holding or has held tokens they have issued. Important when you care about staying compliant. 
+- Universal interoperability design, which allows issuance of multiple different assets on the same network, enables sophisticated transaction types. 
+- Many of the world’s largest financial institutions, who helped design Corda in the first place, are deploying production-quality Corda nodes.
+
+Cordite is an open source project built on Corda that provides companies and corporations the distributed governance and economic services [10]. 
+Particularly, the Distributed General Ledger provides a de-centralised way to manage accounts and issue tokens on Corda. 
+
+What is XPFS? Distributed ledgers or blockchains are good for recording transactions or executing smart contracts, but a full business trade process is 
+not just about transactions or executions, it requires other supportive information to complete the whole lifecycle of the data flow, such as trade 
+counterparty identity proof, contracts, legal papers, ownership certificates and etc. These documents are normally presented and stored as images or 
+large files, which are kept off-chain. Because of the distributed nature of the blockchain, we need a distributed file storage system accessible 
+from every node of the blockchain network to upload or retrieve back files. Security and privacy are paramount attributes for financial transactions, 
+therefore the distributed file storage system also needs to be securely guarded with proper level of access control.  
+
+After a comprehensive analysis of the globally available network storage and security technologies by our technical and advisory team, we believe that 
+the Cyber Mimic Defense [11] and the file storage system built on top this cutting-edge technology will fulfil CrossPool’s requirement for a blockchain 
+integrated secure distributed storage system. Therefore, we choose to work with the award-winning R&D team from a Peking University key lab [12] to develop 
+the XPFS. XPFS will be based on the existing patent obtained file storage solution and further enhanced by adding a built-in layer of 
+Identity and Access Management (IAM) control to allow digitalised documents and certificates to be shared and accessed securely across the XPDL. 
+
+On top of the XPFS, the XPDL will be running 4 groups of Corda nodes:
+
+<p  style="text-align:center">
+  <img src="../../images/xpfs.png" />
+</p>
+
+- **Token Registry Node:** issues cryptoasset tokens, eg. security tokens, crypto-coins, digital cash, virtual currency and distributed fees, according 
+to the existing regulatory frameworks;  
+- **Region Node:** manages registered user accounts from a specific region (e.g. a country or sovereign state, such as the US or China) to record, 
+manage and execute smart contracts in perfect synchrony with other peers; 
+- **Network Notary Node:** provides uniqueness consensus of all the XPDL transactions; 
+- **Token Teller Node:** handles XPDL/public token swap. Each node will be responsible for a particular public blockchain, such as HyperLedger Fabric or Ethereum.
+
+Tokens created and issued on the XPDL are CrossPool Asset Tokens (XPATs). These tokens will be operating in a XPDL to public swappable binary model. 
+Comparing to the public coin model, the binary operating model will have the following benefits: 
+
+- Restrict the XPAT circulation to trusted and authenticated users and have auditable track records of transactions for regulatory compliance; 
+- Maintain the flexibility of swapping the XPAT out of XPDL to the public blockchains for broader public circulation or swapping the public blockchain 
+tokens back into XPDL through monitored and controlled check-points; 
+- Open up future opportunities to implement new features or improvement proposals, such as cross-chain atomic swap, inter-ledger token exchange etc. 
+
+XPAT movements on XPDL with public token swaps are shown as follows: 
+ 
+<p  style="text-align:center">
+  <img src="../../images/xpbinary.png" />
+</p>
+ 
+- XPAT initially issued by the Token Registry Node onto the XPDL; 
+- XPAT on XPDL are debited or credited between CrossPool user accounts, which are KYC/AML verified; 
+- XPAT can be put into reserve in exchange for pegged public tokens, such as Ethereum ERC tokens, through a specific Token Teller Node; 
+- Pegged public tokens then can be withdrawn by a CrossPool user account from the Token Teller Node out to the corresponding public blockchain to allow subsequent transfer to other public wallets; 
+- Pegged public tokens can also be deposited into the Token Teller Node by a CrossPool registered user account in exchange for XPAT, which then will be unlocked and distributed back onto the XPDL.
+ 
+## 4.3 CrossPool Hybrid Mode Trading 
+
+The second sub-component composed of CrossPool is the CrossPool Trading System (XPTS).  
+
+XPTS will be an upgraded version of our current product – CryptoFabrik. CryptoFabrik is our multi-venue cryptoassets trading platform. 
+It provides a single interface into all your exchange accounts, gain unprecedented access to liquidity by trading on the aggregated price feeds from all major exchanges.  
+
+CryptoFabrik currently has the following features: 
+
+- Discover, compare and analyse prices and order book fundamentals for multiple exchanges in real-time; 
+- Access aggregated market data and all your exchange accounts easily and in one place; 
+- Use one unified and highly functional interface to cover your whole trading cycle, from research to executing orders, to tracking your holdings and performance; 
+- View your consolidated portfolio of holdings, all transactions, and performance across different assets and trading venues in a consistent dashboard
+ 
+There will be further developments of the CryptoFabrik to make XPTS a full-fledged exchange, by firstly adding matching engines; and secondly integrating post-trade 
+Straight Through Process (STP) with XPDL.  
+
+There are 3 types of cryptoasset exchanges in terms of matching and settlement behaviours: centralised exchange, de-centralised exchange and hybrid exchange. 
+Centralised exchange is no difference to the traditional equity or forex exchanges, where orders are aggregated on centralised orderbooks and matched, then transactions are 
+recorded as an entry within the exchange-controlled database. Only upon requested by the users, tokens will be moved out of the exchange and settled on the blockchain. 
+In contrast, a de-centralised exchange is not in control of the orderbooks and settlement process. It uses bespoke protocol to facilitate the price discovery and help 
+counterparties to transact with each other directly risk-free. Because all the orders are submitted on-chain by the users and trades are settled on-chain by smart contracts. 
+But de-centralised exchange is not broadly adopted due to its lack of liquidity and issue of scalability. XPTS belongs to the third type of exchange, a hybrid exchange. 
+
+The XPTS is operating in a hybrid mode with centralised orderbooks and matching followed by de-centralised settlement process:
+ 
+<p  style="text-align:center">
+  <img src="../../images/xpstp.png" />
+</p>
+ 
+- Users on different XPDL Region Nodes sends bid and ask orders to the centralised orderbook processed by the XPTS matching engine;  
+- When bid and ask orders matched and trades occurred, trade details passed back to the corresponding XPDL Region Nodes that manages the corresponding buyers and sellers; 
+- Post trade STP then will take place on the XPDL and be initiated by the Region Node managing the takers with the participants of the other Region Node managing the makers 
+plus the Network Notary Node to achieve immediate post trade settlement.
+  
+CrossPool’s ultimate goal is to create a multi-chain interoperable, de-centralised exchange. With the current blockchain technology, there are limitations of a de-centralised 
+exchange comparing to the traditional centralised exchange, such as latency of on-chain orderbook and support of advanced order types (e.g. iceberg orders). Therefore, 
+a hybrid exchange will still keep the centralised exchange matching efficiency with the added benefit of faster and frictionless settlement. As the blockchain technology progresses, 
+the CrossPool hybrid exchange could be further upgraded to a fully de-centralised exchange.
+  
+# 5. Road Map & Major Features
+
+There are 4 delivery milestones (phases) in year 2019, the first year of operation: Mt. Tai, Mt. Hua, Mt. Heng and Mt. Song. 
+
+## 5.1 Provisional Road Map 
+
+**March 2019 (Mt. Tai): MVP launch of CrossPool Platform**
+
+- XPDL 
+    - Testnet heterogeneous cloud deployment 
+    - Network Notary Node and Region Node enabled 
+    - Region Node user and account management 
+- XPTS 
+    - User identity management integrated with XPDL 
+    - Connection to Ethereum network 
+    - Connection to Bitcoin network 
+- XPFS 
+    - Heterogeneous cloud deployment with XPDL 
+    - File sharing among Region Nodes and Network Notary Node
+
+**June 2019 (Mt. Hua): Launch and listing of XPU and other ERC-ready tokens**
+
+- XPDL 
+    - XPU issuance and listing on Testnet 
+    - Token Registry Node enabled 
+- XPTS 
+    - User multi-wallet management 
+    - Matching and trading ready for BTC, ETH and ERC tokens 
+- XPFS 
+    - IAM control integrated with XPDL and XPTS 
+
+**September 2019 (Mt. Heng): Testnet launch for asset tokenisation on CrossPool** 
+
+- XPDL 
+    - Testnet for early access 
+    - STP integrated with XPTS matching and trading 
+    - Token Teller Node enabled 
+- XPTS 
+    - XPU swaps between XPDL and Ethereum network 
+    - MultiSig wallet and token custodian 
+- XPFS 
+    - File deletion, archive and restore integration 
+
+**December 2019 (Mt. Song): Launch of first tokenized asset on CrossPool** 
+
+- XPDL 
+    - XPAT listing ready 
+- XPTS 
+    - Matching and trading ready for XPU and XPAT 
+    - Support advanced order types and matching 
+    - RFQ trading 
+- XPFS 
+    - Operation audit integration with blockchain
+
+## 5.2 Major Features 
+
+Version Mt. Song & beyond (subject to change). 
+
+- **Create and List Assets**
+    - Allow asset owners to offer various types of cryptoassets using predefined templates; 
+    - Allow asset owners to manage the associated digital documents stored on the XPFS;  
+    - One-click listing of the new XPAT on the market place; 
+    - Market place for users to search across all the available XPAT and display the details; 
+    - Market place for users to search for public tradable coins and tokens; 
+    - Allow asset owners to issue XPAT pegged public tokens and list on the market place
+- **Trade across cryptoassets** 
+    - Allow trading via browsers, mobile devices and standard APIs including REST, Websocket and FIX; 
+    - Connection to broad set of exchanges (centralised or decentralised, crypto, FX or equities), market data sources, 
+    custodian/escrow services and proprietary firm liquidity venues (dark and lit pools, p2p); 
+    - Multi-chain connectivity to Corda, Hyperledger, Bitcoin, Ethereum and more; 
+    - Aggregation of multiple sources for liquidity, pricing and market data with smart price quote, 
+    synthetic instrument price quote and smart order routing to best execution venues; 
+    - Support market, limit and cancel replace orders, as well as other advanced types include stop-loss, take-profit, iceberg and etc.; 
+    - Request-for-quote (RFQ), OTC and Portfolio trading; 
+    - Ability to execute block trades via order slicing and smart recurrent order routing; 
+    - Auction order matching, Mid-price matching and Benchmark matching; 
+    - Social and sentimental trading 
+    - Smart multi-asset Robo-Adviser
+- **Operate the business** 
+    - User, accounts and identity management across XPDL, XPTS and XPFS; 
+    - KYC and AML checks; 
+    - Overview of holdings and their respective storage venues, including support of custody solutions; 
+    - Allow fund transfer between venues, custodian and firm managed cold wallets; 
+    - Payment gateway integrations for deposits and withdrawals of fiat money; 
+    - Allow permissioned third-party Region Node to join the XPDL; 
+    - Distributed file sharing and encryption on heterogeneous cloud setup, enabling secure storage of sensitive documents and information; 
+    - Allow files on XPFS to be deleted, archived and restored
+
+# 6. CrossPool token private offering
+
+## 6.1 Overview 
+
+The CrossPool private offering serves to support and accelerate the development of CrossPool exchange. Users of CrossPool utility tokens (XPU) 
+will enjoy discounts on fees for listing, trading, market making, and other services provided.  
+
+The net proceeds of the private token offering will be used to build out the CrossPool platform and its associated applications, 
+set up the operation of the business, as well as to roll out the business globally, and will be subject to audit. The following is provided for 
+summary purposes only and does not form part of any agreement to the XPU private offering.
+
+| | |
+|-|-|
+| Issuer | CrossPool Limited (“XP”), Private company limited by shares; incorporated and registered in Astana, Kazakhstan. Registered office: Business Centre "Congress Office", 48 Sauran Street, 010000, Kazakhstan  |
+| Website | www.crosspool.io |
+| Token name | XP Utility Token |
+| Ticker | XPU |
+| Project name | CrossPool Exchange  |
+| Total token supply | 200,000,000 XPU |
+| Total token for private sale | 100,000,000 XPU |
+| Soft cap | USD 3,000,000 is the minimum target CrossPool team intends to raise, and is also the 1-year funding target, which would enable us to build the essential feature on the CrossPool platform in the first year. We reserve the right to return all contributions below this cap. |
+| Hard cap | USD 10,000,000 is the funding target to roll out more advanced features in the first year, and no contribution above this limit will be accepted. |
+| Accepted payment method | USD transferred to the bank account specified by XP |
+| Minimum contribution amount | Minimum contribution amount is set to be USD 3,000 to avoid unnecessarily administrative costs. |
+| Token distribution date | Anticipated to be in Q1 2019, the latest details can be found on our website |
+| Token pricing | For every USD 1 contributed, contributors can expect to get 7.00-10.15 XPU, depending on the total contribution amount and the phase in which contributors participated. |
+| Bonus | Up to 45% bonus, depending on contribution phase and contribution amount |
+
+## 6.2 Token nature and application  
+
+XPU is a utility token designed to support transactions on CrossPool platform. The token can be used to pay for services in the CrossPool platform including but not limited to asset origination, 
+listing and trading. Business users of the CrossPool platform, asset owners, professional traders, wealth and Investment managers and token brokers, can select to pay using XPU or fiat. 
+Holders of XPU will enjoy a time-bound discount when settling transaction fees with XPU. Exact details on discounts will be announced once the exchange is live. As the platform matures, 
+we might introduce more services to the ecosystem, in which XPU will continue to serve as the primary platform token.  Non-holders of the XPU token will have access to all core features 
+of the CrossPool platform, however will not enjoy the full benefits designed specifically for token holders.   
+
+The XPU token will also be used to reward development activities and service contributions from third party service providers. For development activities CrossPool intends to create 
+a community of developers, participants in the development community will be incentivized though bounties and rewards. Development contributions can be categorized into two groups. 
+
+The first group includes direct contributions to the CrossPool platform such as bug fixes, performance improvements and the development of applications that provide additional 
+functionalities to CrossPool platform. The second group includes development activities outside CrossPool platform, such as an XPU ERC token Dapp or any other application 
+promoting the usage of the XPATs.  
+
+Development activities within the two groups will be rewarded with XPU or XPU ERC tokens.  Public blockchain users and developers who are not registered with CrossPool but wish to 
+exchange the XPU ERC token for fiat or other tokens can go to a registered CrossPool token broker. Both CrossPool registered and non-registered users can participate in development activities.  
+
+The service contributions are not part of the development scheme and are defined as additional services such as custody, pricing services etc. provided by third parties. 
+These services will integrate to CrossPool infrastructure. Service providers will be compensated with XPU tokens in exchange for their service. Service contributors will become a 
+part of the ecosystem and need to go through CrossPool registration system. 
+
+Investors will receive a paper certificate for the issuance of the XPU token as soon as the transactions is confirmed. Upon completion of the token sale, Investors will have the option 
+to request the issuance of XPU ERC tokens equivalent to the XPU tokens. Once the CrossPool is live, token owners will have the option to swap the XPU ERC token for the XPU token and 
+use it within the XP exchange or hold the XPU ERC tokens.  
+
+All users participating in the private sale must go through the registration process. During the private sale the XPU token can be purchased using USD, once the CrossPool exchange is 
+fully operational the XPU token will be available for purchase with ETH, BTC and fiat, the token is fully convertible to other listed tokens and cryptocurrencies. 
+
+At the current stage we do not have plans to list the XPU token on any other exchanges. XPU tokens will not provide users with dividends or any other form or pay-outs and XPU tokens 
+do not represent ownership or concede voting rights. 
+
+## 6.3 Private offering process 
+   
+The private offer starts on 5th Nov 2018, and will run for a period of 3 months, or when the hardcap is reached, whichever happened first. 
+   
+Interested parties should register on our website first, after registration, we will do a pre-screening, and invite potential contributors by e-mail. At which point, 
+investors should expect to go through a KYC/AML procedure prior to making the contribution.  
+   
+We anticipate to start token allocation in Q1 2019, and we will publish the exact date and all related details on our website. 
+
+## 6.4 Token Allocation
+
+<p  style="text-align:center">
+  <img src="../../images/tokenalloc.png" />
+</p>
+
+## 6.5 Fund allocation
+
+<p  style="text-align:center">
+  <img src="../../images/fundalloc.png" />
+</p>
+
+The use of funds reflects our focus on engineering and research work and will be subject to audit.
+
+# 7. Team and structure  
+
+## 7.1 Corporate governance 
+
+The directors of CrossPool will be responsible for the efficient use of funds resulting from the private offering, as well as the on-going management of reserve. 
+CrossPool is a subsidiary of FinFabrik Limited, a privately-owned company based in Hong Kong. The progress of the project will be under strict scrutiny of existing investors of FinFabrik, 
+in the form of quarterly meetings and monthly progress update meetings.  
+
+To be authorised, under section 109 of the AIFC Financial Services Framework Regulation, an auditor who is an Ancillary service provider8 will also be appointed to serve as an over-sight. 
+
+## 7.2 Our team 
+
+The CrossPool team has a strong track record in capital markets, with deep expertise in the area of wealth management, blockchain technology, trading operations and software development. 
+We share the same vision and belief that through blockchain technology, digital asset backed securities has the potential to re-shape capital markets, and it is with this strong belief 
+that drives us to build the platform.
+ 
+CrossPool is developed by FinFabrik, a technology provider that serves cryptoassets businesses. 
+To see the rest of the FinFabrik team, please refer to our [website](https://www.finfabrik.com/people).
+
+# 8. References 
+
+[1] F. M. Spiegl, “Welcome to the Digital Real Assets Economy” 2018. [Website](https://medium.com/fabrik-thoughts/welcome-to-the-digital-real-assets-economy-3aadb891ab30)
+
+[2] ​Wikipedia, “Petro (cryptocurrency)” [Website](https://en.wikipedia.org/wiki/Petro_(cryptocurrency)) 
+
+​[3] Q. Yao, “Experimental Study on Prototype System of Central Bank Digital Currency” 2018. [Website](http://www.jos.org.cn/jos/ch/reader/create_pdf.aspx?file_no=5595&year_id=2018&quarter_id=9&falg=1)
+
+​[4] S. McKeon, “The Security Token Thesis” 2018. [Website](https://hackernoon.com/the-security-token-thesis-4c5904761063)
+
+​[5] “Can Bitcoin Be Traced?” 2018. [Website](https://www.bitcoinofamerica.org/blog/can-bitcoin-traced/)
+
+​[6] “Corda - The open source blockchain for business” R3, [Website](http://www.corda.net)
+
+[7] ​“Corda Docuementation” R3, [Website](https://docs.corda.net)
+
+[8] ​R. Brown, “Asset Tokenisation: An idea whose time has come… but not for the reasons you might expect” 2018. [Website](https://medium.com/corda/asset-tokenisation-an-idea-whose-time-has-come-but-not-for-the-reasons-you-might-expect-ac4d0feab9e1) 
+
+[9] ​R. Brown, “Corda Top Ten Facts” 2018. [Website](https://medium.com/corda/corda-top-ten-facts-all-in-one-place-d41a1b371b64)
+
+[10] ​“Cordite” Cordite Foundation, [Website](https://cordite.foundation)
+
+[11] ​“Shenzhen Key Lab of Information Theory&Future Network Architecture” Peking University, [Website](http://web.pkusz.edu.cn/itfna) 
+
+[12] ​Wikipedia, “Cyber Mimic Defense” [Website](https://en.wikipedia.org/wiki/Cyber_Mimic_Defense)
+
 
 
