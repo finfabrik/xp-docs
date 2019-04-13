@@ -2,7 +2,6 @@ site_name: CrossPool
 pages:
     - Welcome: index.md
     - English:
-      - 'White Paper': 'en/whitepaper.md'
       - 'Glossary': 'en/glossary.md'
 theme: readthedocs
 extra_css:
